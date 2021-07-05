@@ -17,4 +17,10 @@
         android:label="@string/formation"
         tools:layout="@layout/fragment_formation" />
 
+    <fragment
+        android:id="@+id/nav_university"
+        android:name="com.example.myschool_isi_android.UniversityFragment"
+        android:label="@string/university"
+        tools:layout="@layout/fragment_university" />
+
 </navigation>
