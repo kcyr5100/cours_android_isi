@@ -19,7 +19,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txtLogin = findViewById(R.id.txtLogin);
         txtPassword = findViewById(R.id.txtPassword);
-        btnConnect = findViewById(R.id.btnSignup);
+        btnConnect = findViewById(R.id.btnConnect);
+        btnSignUp = findViewById(R.id.btnSignup);
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BdActivity.class);
+                startActivity(intent);
+            }
+        });
+
         //Gerer le click sur le bouton btnConnect
         btnConnect.setOnClickListener(new View.OnClickListener() {
             @Override
